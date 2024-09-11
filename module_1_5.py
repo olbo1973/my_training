@@ -1,2 +1,5 @@
-immutable_var=tuple([a,b,c, ,1,2,3])
-print()
+
+immutable_var=tuple_="abc",123,[456]
+
+print(immutable_var)
+

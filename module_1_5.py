@@ -11,4 +11,6 @@ print(mutable_list)
 #index = mutable_list.index(True)
 #print(index)
 mutable_list[2]=False
+mutable_list[1]='6,7,8'
+mutable_list[0]='ZYW'
 print(mutable_list)

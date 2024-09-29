@@ -1,27 +1,27 @@
-звонки = 0
+calls = 0
 
 
-#Создать в ccrytiе count_calls - это изменительность в нейх звонких по поведу.
-деф count_calls():
- глобальный звонит
- звонки += 1
+# Создать функцию count_calls и изменять в ней значение переменной calls.
+def count_calls():
+    global calls
+    calls += 1
 
 
-#Создать funkczi string_info со страмоком
-деф стрёка_инфо(строка):
-    count_calls()  #вызвать звонки
-    возврат (лен(строка), строка.верхний(), строка.нижнее())
+# Создать функцию string_info с параметром string
+def string_info(string):
+    count_calls()  # вызвать calls
+    return (len(string), string.upper(), string.lower())
 
 
-#Создать funkczius is_soderjit со ctrokoy dwumya parametrami и list_to_search
-деф ис_содержит(строка, list_to_search):
+# Создать функцию is_contains с двумя параметрами string и list_to_search
+def is_contains(string, list_to_search):
     count_calls()
- возврат строка.верхний() в [строка.верхний() для с в списке_то_пойсск]
+    return string.upper() in [string.upper() for s in list_to_search]
 
 
-#Вывод в консоль
-печать(стрёка_инфо('Капибара'))
-печать(стрёка_инфо("Армагеддон"))
-печать(ис_содержит('Городской', ['запретить', 'БаН', 'УРБАН']))  #Городской ~ urBan
-печать(ис_содержит('цикл', ['recycle', 'циклический']))  #Нет совпаденный
-печать(звонит)
+# Вывод в консоль
+print(string_info('Capybara'))
+print(string_info('Armageddon'))
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))  # Urban ~ urBan
+print(is_contains('cycle', ['recycle', 'cyclic']))  # No matches
+print(calls)

@@ -19,7 +19,7 @@ def is_contains(string, list_to_search):
     return string.upper() in [string.upper() for s in list_to_search]
 
 
-# Вывод результата
+# Вывод в консоль
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
 print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))  # Urban ~ urBan
